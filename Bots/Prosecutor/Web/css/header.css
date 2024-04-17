@@ -1,0 +1,61 @@
+.header {
+    overflow: hidden;
+    padding: 10px;
+    
+    background-color:#1e1e2d;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .header a {
+    float: left;
+    color:white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 4px;
+  }
+  
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+    
+  }
+  
+  .header a.active {
+    color: white;
+  }
+  
+  .header-right {
+    float: right;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+  }
+.baslik {
+text-align: center;
+font-size:30px;
+}
+.cizgi {
+  background-color: white;
+  height: 1px;
+width: 100%;
+  }
+.isim30px {
+  text-align: left; font-size: 30px; color: #b0b0b6; margin-left: 1%;
+}
+.isim50px {
+  text-align: left; font-size: 45px; color: #b0b0b6; margin-left: 1%;
+}
+.strongİsim{
+  text-align: left; font-size: 30px; color: #88888f;
+}
+.strongİsim50px{
+  text-align: left; font-size: 50px; color: #88888f;
+}

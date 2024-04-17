@@ -1,0 +1,27 @@
+<%- include('ek/header.ejs', {bot, user,url}) %>
+<div class="center">
+  <link rel="stylesheet" href="../css/08c1c3f860e667ff.css">
+
+  <section class="dashboard-container ">
+    <div class="sidebar_sidebar__servers__rR6kY ">
+      <div class="user-image">
+        <div class=" ">
+          <a href="<%=url%>profil/<%=user.id%>"><img src="https://cdn.discordapp.com/avatars/<%=user.id%>/<%=user.avatar%>" class="sidebar_guild__images__mjUJ3 sidebar_user_image__aws4U" alt="user" draggable="false"></a>
+        </div>
+      </div>
+      <% user.guilds.filter(x=> x.permissions == 2147483647).forEach(guild => { %>
+        <div class=" ">
+  <a href="<%=url%>server/<%=guild.id%>">
+  <img class="sidebar_guild__images__mjUJ3" name=<%=guild.name%> alt=<%=guild.name%> src="https://cdn.discordapp.com/icons/<%=guild.id%>/<%=guild.icon%>" draggable="false">
+  </a>
+  </div>
+       <% }) %>
+    </div>
+    <div class="component-container">
+      <div class="mt-50 invite_div sidebar_guild-not-in__bRVgo "><h2>Bu sunucu kurulum gerektiriyor.</h2><div><a class="btn btn-primary btn-icon btn-rounded btn-lg inviteBtn"><i class="fab fa-discord btn-discord-logo"></i>Discorda Devam Et</a></div></div><div style="height: 100px;"></div></div>
+
+</div>
+
+  
+
+  

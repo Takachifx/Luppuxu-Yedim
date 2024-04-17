@@ -1,0 +1,24 @@
+
+
+
+<%- include('ek/header.ejs', {bot, user}) %>
+<div style="align-items: center;display: flex;justify-content: center;">
+<form action="auth" method="POST">
+  <div class="form">
+    <div class="title">Panel'e Hoşgeldin!</div>
+    <div class="subtitle">Giriş yapmak için şifreni gir! (/sifrem)</div>
+    <div class="input-container ic2">
+      <input id="userID" class="input" type="text" placeholder=" " value=<%=user.id%> />
+      <div class="cut"></div>
+      <label for="lastname" class="placeholder">Senin ID'in</label>
+    </div>
+    <div class="input-container ic1">
+      <input id="password" name="password" class="input" type="text" placeholder=" "/>
+      <div class="cut"></div>
+      <label for="firstname" class="placeholder">Şifrenizi Buraya Girin</label>
+    </div>
+    <button id="login" type="text" class="submit">Giriş yap</button>
+  </div>
+</form>
+
+</div>

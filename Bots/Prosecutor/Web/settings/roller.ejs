@@ -1,0 +1,585 @@
+
+
+
+<%- include('../ek/header.ejs', {bot, user,sunucu,url,sunucum,dailyMessage,dailyVoice}) %>
+<link rel="stylesheet" href="../css/08c1c3f860e667ff.css">
+
+<div class="center">
+  <section class="dashboard-container ">
+<div class="sidebar_sidebar__servers__rR6kY ">
+      <div class="user-image">
+        <div class=" ">
+          <a href="<%=url%>profil/<%=user.id%>">
+            <img src="https://cdn.discordapp.com/avatars/<%=user.id%>/<%=user.avatar%>" class="sidebar_guild__images__mjUJ3 sidebar_user_image__aws4U" alt="user" draggable="false">
+            </a>
+        </div>
+      </div>
+        <div class=" ">
+  <a href="<%=url%>server/<%=sunucum.id%>">
+  <img class="sidebar_guild__images__mjUJ3" name=<%=sunucum.name%> alt=<%=sunucum.name%> src="https://cdn.discordapp.com/icons/<%=sunucum.id%>/<%=sunucum.icon%>" draggable="false">
+  </a>
+  </div>
+</div>
+<aside class="sidebar_sidebar__1af5q ">
+  <div class="sidebar_sidebar__links__e439P">
+  <div id="sidebar_sidebar__server-info__03ViT">
+  <img id="sidebar_sidebar__avatar__QDGRP" draggable="false" src="https://cdn.discordapp.com/icons/<%=sunucu.id%>/<%=sunucu.icon%>" alt="server image">
+  <h4>
+  <%=sunucu.name%>
+  </h4>
+  </div> 
+  <div id="sidebar_sidebar__items__5Hd7R">
+<div class="sidebar_sidebar__general-item__gVnTX sidebar_category_opened__uVDac">
+<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 1L5 5L9 1" stroke="#878787" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+</path>
+</svg>
+<h3>GENEL</h3>
+</div>
+<div>
+</div>
+<div class=" ">
+  <a href="<%=url%>server/968177149511086080">
+  <div class="sidebar_sidebar__general-item-row__0z2Gp sidebar_sidebar__link-active__Jepms">
+  <div class="sidebar_sidebar__sidebar-link__1NU9L">
+  <div>
+  <i class="fas fa-eye">
+  </i>Genel Bakış</div>
+  </div>
+  </div>
+  </a>
+  </div>
+  <div class="sidebar_sidebar__general-item__gVnTX sidebar_category_opened__uVDac">
+    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1 1L5 5L9 1" stroke="#878787" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    </path>
+    </svg>
+    <h3>liderlik tablosu</h3>
+    </div>
+    <div>
+    <div class=" ">
+    <a href="<%=url%>top/message">
+    <div class="sidebar_sidebar__general-item-row__0z2Gp ">
+    <div class="sidebar_sidebar__sidebar-link__1NU9L">
+    <div>
+      <i class="fa-solid fa-message"></i>Mesaj'a göre ilk 100</div>
+    </div>
+    </div>
+    </a>
+    </div>
+    <div class=" ">
+    <a href="<%=url%>top/voice">
+    <div class="sidebar_sidebar__general-item-row__0z2Gp ">
+    <div class="sidebar_sidebar__sidebar-link__1NU9L">
+    <div>
+    <i class="fa-solid fa-volume-high">
+    </i>Ses'e göre ilk 100</div>
+    </div>
+    </div>
+    </a>
+    </div>
+    <div class=" ">
+      <a href="<%=url%>top/invite">
+      <div class="sidebar_sidebar__general-item-row__0z2Gp ">
+      <div class="sidebar_sidebar__sidebar-link__1NU9L">
+      <div>
+        <i class="fa-solid fa-user-plus"></i>Davet'e göre ilk 100</div>
+      </div>
+      </div>
+      </a>
+      </div>
+      <div class=" ">
+        <a href="<%=url%>top/level">
+        <div class="sidebar_sidebar__general-item-row__0z2Gp ">
+        <div class="sidebar_sidebar__sidebar-link__1NU9L">
+        <div>
+          <i class="fas fa-medal"></i>Level'e göre ilk 100</div>
+        </div>
+        </div>
+        </a>
+        </div>
+    </div>
+<div class="sidebar_sidebar__general-item__gVnTX sidebar_category_opened__uVDac">
+<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 1L5 5L9 1" stroke="#878787" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+</path>
+</svg>
+<h3>SUNUCU AYARLARI</h3>
+</div>
+<div>
+<div class=" ">
+<a href="<%=url%>server/968177149511086080/mod">
+<div class="sidebar_sidebar__general-item-row__0z2Gp ">
+<div class="sidebar_sidebar__sidebar-link__1NU9L">
+<div>Roller</div>
+</div>
+</div>
+</a>
+</div>
+
+<div class=" ">
+  <a href="<%=url%>server/968177149511086080/logs">
+  <div class="sidebar_sidebar__general-item-row__0z2Gp ">
+  <div class="sidebar_sidebar__sidebar-link__1NU9L">
+  <div>Kanallar</div>
+  </div>
+  </div>
+  </a>
+  </div>
+
+<div class=" ">
+<a href="<%=url%>server/968177149511086080/welcomer">
+<div class="sidebar_sidebar__general-item-row__0z2Gp ">
+<div class="sidebar_sidebar__sidebar-link__1NU9L">
+<div>Welcome</div>
+</div>
+</div>
+</a>
+</div>
+<div class=" ">
+  <a href="<%=url%>server/968177149511086080/welcomer">
+  <div class="sidebar_sidebar__general-item-row__0z2Gp ">
+  <div class="sidebar_sidebar__sidebar-link__1NU9L">
+  <div>Sistem Ayarları</div>
+  </div>
+  </div>
+  </a>
+  </div>
+<div class=" ">
+<a href="<%=url%>server/968177149511086080/anti_raid">
+<div class="sidebar_sidebar__general-item-row__0z2Gp ">
+<div class="sidebar_sidebar__sidebar-link__1NU9L">
+<div>Guard</div>
+</div>
+</div>
+</a>
+</div>
+<div class=" ">
+<a href="<%=url%>server/968177149511086080/automod">
+<div class="sidebar_sidebar__general-item-row__0z2Gp ">
+<div class="sidebar_sidebar__sidebar-link__1NU9L">
+<div>Chat Guard</div>
+</div>
+</div>
+</a>
+</div>
+
+<div class=" ">
+<a href="<%=url%>server/968177149511086080/leveling">
+<div class="sidebar_sidebar__general-item-row__0z2Gp ">
+<div class="sidebar_sidebar__sidebar-link__1NU9L">
+<div>Seviye Sistemi</div>
+</div>
+</div>
+</a>
+</div>
+
+
+
+</div>
+<div class="sidebar_sidebar__general-item__gVnTX sidebar_category_opened__uVDac">
+<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 1L5 5L9 1" stroke="#878787" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+</path>
+</svg>
+<h3>Diğerleri</h3>
+</div>
+<div>
+<div class=" ">
+<a href="<%=url%>server/968177149511086080/panel_logs">
+<div class="sidebar_sidebar__general-item-row__0z2Gp ">
+<div class="sidebar_sidebar__sidebar-link__1NU9L">
+<div>Kontrol Paneli Kayıtları</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>     
+</aside>
+<div class="component">
+<div class="component-container">
+<div style="opacity: 1;">
+<div>
+<div class="PagesTitle_pages-title__E_aAk undefined">
+<div>
+<h3 class="mt-10">Rol Ayarları</h3>
+<h5>Çoklu Seçim Gerektiren Yerler</h5>
+</div>
+<div>
+</div>
+</div>
+<div class="component-container mt-30">
+<div class="row ms-1 me-1 gap-3 mb-3 ">
+
+<div class="overview_card__MsjbH col-md">
+<div class="overview_credits__NrLTV">
+  <i class="fa-solid fa-gear"></i>
+<div>
+  <h5>Kayıtsız Rollerini Seç!</h5>
+  <br>
+  <select id="unregister-roles" name="unregisterroles" class="form-control" required multiple>
+      <option selected disabled>Kayıtsız Rolleri</option>
+      <% sunucum.roles.cache.sort((a,b)=> b.rawPosition - a.rawPosition).filter(a => a.id != sunucum.id).map(id => { %>
+          <option value="<%=id.id%>">
+              <%=id.name%>
+          </option>
+          <% }) %>
+  </select>
+</div>
+</div>
+</div>
+<div class="overview_card__MsjbH col-md">
+  <div class="overview_credits__NrLTV">
+    <i class="fa-solid fa-gear"></i>
+  <div>
+    <h5>Erkek Rollerini Seç!</h5>
+    <br>
+    <select id="man-roles" name="manroles" class="form-control" required multiple>
+        <option selected disabled>Erkek Rolleri</option>
+        <% sunucum.roles.cache.sort((a,b)=> b.rawPosition - a.rawPosition).filter(a => a.id != sunucum.id).map(id => { %>
+            <option value="<%=id.id%>">
+                <%=id.name%>
+            </option>
+            <% }) %>
+    </select>
+  </div>
+  </div>
+</div>
+<div class="overview_card__MsjbH col-md">
+  <div class="overview_credits__NrLTV">
+    <i class="fa-solid fa-gear"></i>
+  <div>
+    <h5>Kız Rollerini Seç!</h5>
+    <br>
+    <select id="woman-roles" name="womanroles" class="form-control" required multiple>
+        <option selected disabled>Kız Rolleri</option>
+        <% sunucum.roles.cache.sort((a,b)=> b.rawPosition - a.rawPosition).filter(a => a.id != sunucum.id).map(id => { %>
+            <option value="<%=id.id%>">
+                <%=id.name%>
+            </option>
+            <% }) %>
+    </select>
+  </div>
+  </div>
+
+</div>
+
+</div>
+
+
+<div class="PagesTitle_pages-title__E_aAk undefined">
+  <div>
+</div>
+<div class="overview_card__MsjbH col-md">
+  <div class="overview_credits__NrLTV">
+    <i class="fa-solid fa-gear"></i>
+  <div>
+    <h5>Kurucu Rollerini Seç!</h5>
+    <br>
+    <select id="kurucu-roles" name="kurucuroles" class="form-control" required multiple>
+        <option selected disabled>Kurucu Rolleri</option>
+        <% sunucum.roles.cache.sort((a,b)=> b.rawPosition - a.rawPosition).filter(a => a.id != sunucum.id).map(id => { %>
+            <option value="<%=id.id%>">
+                <%=id.name%>
+            </option>
+            <% }) %>
+    </select>
+  </div>
+  </div>
+</div>
+<div class="overview_card__MsjbH col-md">
+  <div class="overview_credits__NrLTV">
+    <i class="fa-solid fa-gear"></i>
+  <div>
+    <h5>Üst Yönetim Rollerini Seç!</h5>
+    <br>
+    <select id="ustyonetim-roles" name="ustyonetimroles" class="form-control" required multiple>
+        <option selected disabled>Üst Yönetim Rolleri</option>
+        <% sunucum.roles.cache.sort((a,b)=> b.rawPosition - a.rawPosition).filter(a => a.id != sunucum.id).map(id => { %>
+            <option value="<%=id.id%>">
+                <%=id.name%>
+            </option>
+            <% }) %>
+    </select>
+  </div>
+  </div>
+</div>
+<div class="overview_card__MsjbH col-md">
+  <div class="overview_credits__NrLTV">
+    <i class="fa-solid fa-gear"></i>
+  <div>
+    <h5>Orta Yönetim Rollerini Seç!</h5>
+    <br>
+    <select id="ortayonetim-roles" name="ortayonetimroles" class="form-control" required multiple>
+        <option selected disabled>Orta Yönetim Rolleri</option>
+        <% sunucum.roles.cache.sort((a,b)=> b.rawPosition - a.rawPosition).filter(a => a.id != sunucum.id).map(id => { %>
+            <option value="<%=id.id%>">
+                <%=id.name%>
+            </option>
+            <% }) %>
+    </select>
+  </div>
+  </div>
+</div>
+<div class="overview_card__MsjbH col-md">
+  <div class="overview_credits__NrLTV">
+    <i class="fa-solid fa-gear"></i>
+  <div>
+    <h5>Alt Yönetim Rollerini Seç!</h5>
+    <br>
+    <select id="altyonetim-roles" name="altyonetimroles" class="form-control" required multiple>
+        <option selected disabled>Alt Yönetim Rolleri</option>
+        <% sunucum.roles.cache.sort((a,b)=> b.rawPosition - a.rawPosition).filter(a => a.id != sunucum.id).map(id => { %>
+            <option value="<%=id.id%>">
+                <%=id.name%>
+            </option>
+            <% }) %>
+    </select>
+  </div>
+  </div>
+</div>
+</div>
+<h5>Tekli Rol Seçimi Gerektiren Yerler</h5>
+<div class="component-container mt-30">
+<div class="row ms-1 me-1 gap-3 mb-3 ">
+  <div class="overview_card__MsjbH col-md">
+    <div class="overview_credits__NrLTV">
+      <i class="fa-solid fa-gear"></i>
+    <div>
+      <h5>Ban Staff Rolünü Seç!</h5>
+      <br>
+      <select id="banStaff-role" name="banstaffrole" class="form-control" required>
+          <option selected disabled>Ban Staff Role</option>
+          <% sunucum.roles.cache.sort((a,b)=> b.rawPosition - a.rawPosition).filter(a => a.id != sunucum.id).map(id => { %>
+              <option value="<%=id.id%>">
+                  <%=id.name%>
+              </option>
+              <% }) %>
+      </select>
+    </div>
+    </div>
+    </div>
+<div class="overview_card__MsjbH col-md">
+      <div class="overview_credits__NrLTV">
+        <i class="fa-solid fa-gear"></i>
+      <div>
+        <h5>Jail Staff Rolünü Seç!</h5>
+        <br>
+        <select id="jailstaff-role" name="jailstaffrole" class="form-control" required>
+            <option selected disabled>Jail Staff</option>
+            <% sunucum.roles.cache.sort((a,b)=> b.rawPosition - a.rawPosition).filter(a => a.id != sunucum.id).map(id => { %>
+                <option value="<%=id.id%>">
+                    <%=id.name%>
+                </option>
+                <% }) %>
+        </select>
+      </div>
+      </div>
+ </div>
+ <div class="overview_card__MsjbH col-md">
+        <div class="overview_credits__NrLTV">
+          <i class="fa-solid fa-gear"></i>
+        <div>
+          <h5>Register Staff Rolünü Seç!</h5>
+          <br>
+          <select id="register-role" name="registerrole" class="form-control" required>
+              <option selected disabled>Register Staff</option>
+              <% sunucum.roles.cache.sort((a,b)=> b.rawPosition - a.rawPosition).filter(a => a.id != sunucum.id).map(id => { %>
+                  <option value="<%=id.id%>">
+                      <%=id.name%>
+                  </option>
+                  <% }) %>
+          </select>
+        </div>
+        </div>
+   </div>
+   <div class="overview_card__MsjbH col-md">
+          <div class="overview_credits__NrLTV">
+            <i class="fa-solid fa-gear"></i>
+          <div>
+            <h5>Bot Commands Rolünü Seç!</h5>
+            <br>
+            <select id="botcommands-role" name="botcommandsroles" class="form-control" required>
+                <option selected disabled>Bot Commands Rolü</option>
+                <% sunucum.roles.cache.sort((a,b)=> b.rawPosition - a.rawPosition).filter(a => a.id != sunucum.id).map(id => { %>
+                    <option value="<%=id.id%>">
+                        <%=id.name%>
+                    </option>
+                    <% }) %>
+            </select>
+          </div>
+          </div>
+     </div>
+</div>
+<div class="row ms-1 me-1 gap-3 mb-3 ">
+  <div class="overview_card__MsjbH col-md">
+    <div class="overview_credits__NrLTV">
+      <i class="fa-solid fa-gear"></i>
+    <div>
+      <h5>Chat Mute Hammer Rolünü Seç!</h5>
+      <br>
+      <select id="cmutehammer-roles" name="cmutehammerroles" class="form-control" required>
+          <option selected disabled>Chat Mute</option>
+          <% sunucum.roles.cache.sort((a,b)=> b.rawPosition - a.rawPosition).filter(a => a.id != sunucum.id).map(id => { %>
+              <option value="<%=id.id%>">
+                  <%=id.name%>
+              </option>
+              <% }) %>
+      </select>
+    </div>
+    </div>
+    </div>
+<div class="overview_card__MsjbH col-md">
+      <div class="overview_credits__NrLTV">
+        <i class="fa-solid fa-gear"></i>
+      <div>
+        <h5>C-Muted Rolünü Seç!</h5>
+        <br>
+        <select id="cmuted-role" name="cmutedrole" class="form-control" required>
+            <option selected disabled>C-Muted Rolünü</option>
+            <% sunucum.roles.cache.sort((a,b)=> b.rawPosition - a.rawPosition).filter(a => a.id != sunucum.id).map(id => { %>
+                <option value="<%=id.id%>">
+                    <%=id.name%>
+                </option>
+                <% }) %>
+        </select>
+      </div>
+      </div>
+ </div>
+ <div class="overview_card__MsjbH col-md">
+        <div class="overview_credits__NrLTV">
+          <i class="fa-solid fa-gear"></i>
+        <div>
+          <h5>V-Mute Hammer Rolünü Seç!</h5>
+          <br>
+          <select id="vmutehammer-roles" name="vmutehammerrole" class="form-control" required>
+              <option selected disabled>V-Mute Hammer</option>
+              <% sunucum.roles.cache.sort((a,b)=> b.rawPosition - a.rawPosition).filter(a => a.id != sunucum.id).map(id => { %>
+                  <option value="<%=id.id%>">
+                      <%=id.name%>
+                  </option>
+                  <% }) %>
+          </select>
+        </div>
+        </div>
+   </div>
+   <div class="overview_card__MsjbH col-md">
+          <div class="overview_credits__NrLTV">
+            <i class="fa-solid fa-gear"></i>
+          <div>
+            <h5>V-Muted Rolünü Seç!</h5>
+            <br>
+            <select id="vmuted-role" name="vmutedrole" class="form-control" required>
+                <option selected disabled>C-Muted Rolünü</option>
+                <% sunucum.roles.cache.sort((a,b)=> b.rawPosition - a.rawPosition).filter(a => a.id != sunucum.id).map(id => { %>
+                    <option value="<%=id.id%>">
+                        <%=id.name%>
+                    </option>
+                    <% }) %>
+            </select>
+          </div>
+          </div>
+     </div>
+</div>
+<div class="row ms-1 me-1 gap-3 mb-3 ">
+  <div class="overview_card__MsjbH col-md">
+    <div class="overview_credits__NrLTV">
+      <i class="fa-solid fa-gear"></i>
+    <div>
+      <h5>Bot Rolünü Seç!</h5>
+      <br>
+      <select id="bot-role" name="botroles" class="form-control" required>
+          <option selected disabled>Bot Rolü</option>
+          <% sunucum.roles.cache.sort((a,b)=> b.rawPosition - a.rawPosition).filter(a => a.id != sunucum.id).map(id => { %>
+              <option value="<%=id.id%>">
+                  <%=id.name%>
+              </option>
+              <% }) %>
+      </select>
+    </div>
+    </div>
+    </div>
+<div class="overview_card__MsjbH col-md">
+      <div class="overview_credits__NrLTV">
+        <i class="fa-solid fa-gear"></i>
+      <div>
+        <h5>Cezalı Rolünü Seç!</h5>
+        <br>
+        <select id="jailed-role" name="jailedrole" class="form-control" required>
+            <option selected disabled>Kayıtsız Rolleri</option>
+            <% sunucum.roles.cache.sort((a,b)=> b.rawPosition - a.rawPosition).filter(a => a.id != sunucum.id).map(id => { %>
+                <option value="<%=id.id%>">
+                    <%=id.name%>
+                </option>
+                <% }) %>
+        </select>
+      </div>
+      </div>
+ </div>
+ <div class="overview_card__MsjbH col-md">
+        <div class="overview_credits__NrLTV">
+          <i class="fa-solid fa-gear"></i>
+        <div>
+          <h5>Yasaklı Tag Rolünü Seç!</h5>
+          <br>
+          <select id="yasaktag-role" name="yasaktagrole" class="form-control" required>
+              <option selected disabled>Yasaklı Tag Rolü</option>
+              <% sunucum.roles.cache.sort((a,b)=> b.rawPosition - a.rawPosition).filter(a => a.id != sunucum.id).map(id => { %>
+                  <option value="<%=id.id%>">
+                      <%=id.name%>
+                  </option>
+                  <% }) %>
+          </select>
+        </div>
+        </div>
+   </div>
+   <div class="overview_card__MsjbH col-md">
+          <div class="overview_credits__NrLTV">
+            <i class="fa-solid fa-gear"></i>
+          <div>
+            <h5>Yeni Hesap (Şüpheli)</h5>
+            <br>
+            <select id="suspect-role" name="suspectrole" class="form-control" required>
+                <option selected disabled>Şüpheli Kullanıcı Rolü</option>
+                <% sunucum.roles.cache.sort((a,b)=> b.rawPosition - a.rawPosition).filter(a => a.id != sunucum.id).map(id => { %>
+                    <option value="<%=id.id%>">
+                        <%=id.name%>
+                    </option>
+                    <% }) %>
+            </select>
+          </div>
+          </div>
+     </div>
+</div>
+<div class="row ms-1 me-1 gap-3 mb-3 ">
+  <div class="overview_card__MsjbH col-md">
+    <div class="overview_credits__NrLTV">
+      <i class="fa-solid fa-gear"></i>
+    <div>
+      <h5>Booster Rolünü Seç!</h5>
+      <br>
+      <select id="booster-role" name="boosterrole" class="form-control" required>
+          <option selected disabled>Booster Rolü</option>
+          <% sunucum.roles.cache.sort((a,b)=> b.rawPosition - a.rawPosition).filter(a => a.id != sunucum.id).map(id => { %>
+              <option value="<%=id.id%>">
+                  <%=id.name%>
+              </option>
+              <% }) %>
+      </select>
+    </div>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+<div style="height: 100px;">
+</div>
+</div>
+</div>
+  </section>
+
+</div>
+<script>
+$('select').selectpicker();
+</script>

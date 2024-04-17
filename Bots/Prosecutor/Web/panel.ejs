@@ -1,0 +1,16 @@
+
+
+
+<%- include('ek/header.ejs', {bot, user,url,sunucum}) %>
+<div class="center">
+  <link rel="stylesheet" href="../css/08c1c3f860e667ff.css">
+  <div class="sidebar_sidebar__servers__rR6kY ">
+    <div class="user-image">
+      <div class=" ">
+        <a href="<%=url%>profil/<%=user.id%>"><img src="https://cdn.discordapp.com/avatars/<%=user.id%>/<%=user.avatar%>" class="sidebar_guild__images__mjUJ3 sidebar_user_image__aws4U" alt="user" draggable="false"></a>
+      </div>
+    </div>
+      <div class=" "><a href="<%=url%>server/<%=sunucum.id%>"><img class="sidebar_guild__images__mjUJ3" name=<%=sunucum.name%> alt=<%=sunucum.name%> src="https://cdn.discordapp.com/icons/<%=sunucum.id%>/<%=sunucum.icon%>" draggable="false"></a></div>
+  </div>
+
+</div>
